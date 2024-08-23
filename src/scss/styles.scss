@@ -2,35 +2,36 @@
 
 body {
     font-family: 'Overpass';
-    background: linear-gradient(to right, #1e3a8a, #9333ea);
+    background: #ccc9c0;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #434341;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #3c2975;
+    background-color: #edeae0;
     padding: 15px;
     border-radius: 20px;
     margin: 20px auto;
     max-width: 600px;
-    border: #211d55 4px solid; 
+    border: #434341 4px solid; 
 }
 
 .navbar a {
-    color: white;
+    color: #434341;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 15px;
-    background-color: #1B4B82;
+    background-color: #ccc9c0;
     margin: 0 10px;
     transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #6d28d9;
+    background-color: #434341;
+    color: white;
 }
 
 .container {
@@ -43,13 +44,13 @@ body {
 }
 
 .profile-card {
-    background: linear-gradient(to left, #1e3a8a, #7a2bc4);
+    background: #edeae0;
     border-radius: 15px;
     padding: 20px;
     width: 40%;
     text-align: center;
     height: 70vh;
-    border: #211d55 4px solid; 
+    border: #434341 4px solid; 
 }
 
 .profile-card .profile-pic {
@@ -57,7 +58,7 @@ body {
     height: auto;
     border-radius: 20%;
     margin-bottom: 15px;
-    border: #211d55 4px solid; 
+    border: #434341 4px solid; 
 }
 
 .contact-education {
@@ -68,8 +69,8 @@ body {
 }
 
 .contact, .education {
-    border: #211d55 4px solid; 
-    background: linear-gradient(to left, #1e3a8a, #7a2bc4);
+    border: #434341 4px solid; 
+    background: #edeae0;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
@@ -86,13 +87,13 @@ body {
 }
 
 h2, h3 {
-    color: #ffffff;
+    color: #434341;
     margin-bottom: 10px;
 }
 
 p {
     margin: 10px 0;
-    color: #d1d5db;
+    color: #434341;
 }
 
 .description {
@@ -118,4 +119,10 @@ p {
 
 .icon:hover {
     transform: scale(1.3);
+}
+
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
