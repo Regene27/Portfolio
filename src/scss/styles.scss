@@ -1,0 +1,121 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    font-family: 'Overpass';
+    background: linear-gradient(to right, #1e3a8a, #9333ea);
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c2975;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: #211d55 4px solid; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #1B4B82;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #6d28d9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: linear-gradient(to left, #1e3a8a, #7a2bc4);
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    height: 70vh;
+    border: #211d55 4px solid; 
+}
+
+.profile-card .profile-pic {
+    max-width: 15vh;
+    height: auto;
+    border-radius: 20%;
+    margin-bottom: 15px;
+    border: #211d55 4px solid; 
+}
+
+.contact-education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.contact, .education {
+    border: #211d55 4px solid; 
+    background: linear-gradient(to left, #1e3a8a, #7a2bc4);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    height: 26vh;
+    padding-left: 70px;
+}
+
+.education {
+    height: 42vh;
+    padding-left: 70px;
+}
+
+h2, h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    color: #d1d5db;
+}
+
+.description {
+    text-align: left;
+}
+
+.i2 {
+    margin-left: 40px;;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+}
