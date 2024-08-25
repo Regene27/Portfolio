@@ -4,83 +4,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Regene Portfolio</title>
+    <title>Regene's Portfolio</title>
     <link rel="stylesheet" href="/scss/styles.scss">
     <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Skills & Experiences</a>
-            <a href="#">Projects</a>
-        </nav>
+        <div class="d-flex flex-row-reverse">
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/about_me">About Me</a>
+                <a href="/contact">Contact</a>
+                <a href="/projects">Projects</a>
+                <a href="files/Regene Line - CV.pdf" download="CV_Regene_Line"><img src="/icons/download.svg" alt=""
+                        class="download-icon">Resume</a>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <div class="profile-card">
-            <div class="container row">
-                <div class="col col-4"><img src="/img/regene.jpg" alt="Profile Picture" class="profile-pic">
-                </div>
-                <span class="col">
-                    <br>
-                    <h2 class="text-center align-middle">Line Regene</h2>
-                    <br>
-                    <h3 id="changeText">Loading</h3>
-                </span>
-            </div>
-
-            <div class="description">
-                <p>Currently a 3rd-year student majoring in Cyber Security at Camtech University of Technology and
-                    Science.</p>
-
-                <p>On the path as a life-long learner.</p>
-
-                <p>Deep understanding of Ruby on Rails and Spree E-commerce framework.</p>
-            </div>
-        </div>
-        <div class="contact-education">
-            <div class="contact">
-                <h2>Contact</h2>
-                <br>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/l.regene?mibextid=ZbWKwL">
-                        <img src="/logo/facebook.svg" alt="Facebook" class="icon">
-                    </a>
-                    <a href="https://www.instagram.com/regene_line/">
-                        <img src="/logo/instagram.svg" alt="Instagram" class="icon">
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/regene-line-34b728205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                        <img src="/logo/linkedin.svg" alt="LinkedIn" class="icon">
-                    </a>
-                    <a href="https://www.github.com/Regene27">
-                        <img src="/logo/github.svg" alt="GitHub" class="icon">
-                    </a>
-                </div>
-            </div>
-
-            <div class="education">
-                <h2>Education</h2>
-
-                <div>
-                    <h3>Secondary</h3>
-                    <div class="i2">
-                        <h4>Pannasastra International School</h4>
-                        <p>2014 - 2017</p>
-                        <h4>E2STEM Education</h4>
-                        <p>2018 - 2021</p>
-                    </div>
-
-                    <h3>Bachelor Degree in Cyber Security</h3>
-                    <div class="i2">
-                        <h4>Camtech University of Technology and Science</h4>
-                        <p>2022 - Present</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div>
+        <h2 id="changeTextHi" class="landing-page"></h2>
+        <h1 id="changeTextName" class="name-title"></h1>
     </div>
+
     </main>
     <script type="text/javascript" src="/js/loadText.js">
     </script>

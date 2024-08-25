@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regene's Portfolio</title>
+    <link rel="stylesheet" href="/scss/styles.scss">
+    <link href='https://fonts.googleapis.com/css?family=Overpass' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex flex-row-reverse">
+            <nav class="navbar">
+                <a href="/">Home</a>
+                <a href="/about_me">About Me</a>
+                <a href="/contact">Contact</a>
+                <a href="/projects">Projects</a>
+                <a href="files/Regene Line - CV.pdf" download="CV_Regene_Line"><img src="/icons/download.svg" alt=""
+                        class="download-icon">Resume</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container row">
+        <div class="header">CSL Detection</div>
+
+        <div class="project-page">
+            <div class="project-title">Using AI to detect Cambodia Sign Language</div>
+            <div class="project-sub-title">Developed & Research by: Sok Samnang, Kea Meanhor, Chhayrong Daravid, Khiev
+                Oudom, Line Regene, Sun Chhunleap
+            </div>
+            <div class="project-image-container"><img src="/img/project2.png" alt="" class="project-image"></div>
+            <div class="project-chapter">Chapter 1: Introduction</div>
+            <div class="project-description">Human communication takes many forms, and sign language plays a vital role
+                for deaf and hard-of-hearing
+                communities. In Cambodia, Cambodian Sign Language (CSL) is the primary mode of communication for
+                thousands
+                of individuals. However, there's a lack of technological solutions to bridge the communication gap
+                between
+                the deaf and hearing people.
+
+
+                Cambodian Sign Language is an essential mode of communication for the deaf community in Cambodia.
+                However,
+                there is a scarcity of resources and technological tools to support CSL users in their daily
+                interactions.
+                This project aims to address this gap by creating an innovative machine learning model that can
+                accurately
+                interpret CSL gestures and translate them into words.
+
+                Through this project, we aim to enhance the accessibility and usability of technology for the Cambodian
+                deaf
+                community, fostering greater inclusivity and understanding. By employing state-of-the-art machine
+                learning
+                methodologies, this project has the potential to significantly improve the quality of life for CSL users
+                and
+                contribute to the broader field of sign language recognition technologies.</div>
+
+            <div class="project-chapter">Chapter 2: Literature Review</div>
+            <div class="project-description">In the subject of gesture recognition, sign language recognition research
+                is expanding. Worldwide, several
+                sign languages have been used in research on sign language recognition, including ASL (American Sign
+                Language), CSL (Chinese Sign Language), KSL (Korean Sign Language) and many more. Many researchers have
+                proposed ideas and techniques for Sign Language Recognition. For instance, according to Bheda, V., &
+                Radpour, D. (2017), their assignment was to categorize all nine ASL numerals (0-9) and letters using
+                deep
+                convolutional neural networks. They used two datasets for their research: NZ ASL datasets and their own
+                self-generated dataset. They observed that in their NZ ASL datasets, their accuracy rate was 82.5% on
+                the
+                alphabet gestures and 92% on digits. However, when switching to their own datasets, they saw a much
+                lower
+                accuracy rate, acquiring 67% accuracy on the alphabet gestures and 70% on digits. For hand sign
+                recognition
+                for Thai finger spelling by Pisit Nakjai and Tatpong Katanyukul (2018), they proposed three schemes:
+                automatic recognition, a formulation to identify any unseen sign, and an effective separation of similar
+                signs. According to Kanchan Dabre and Surekha Dholay (2014), their research on Indian Sign Language used
+                webcam images with two stages: preprocessing to isolate hand features and classification with a Haar
+                Cascade
+                classifier. The result was an average accuracy of 92.68%.</div>
+
+
+            <div class="project-chapter">Chapter 3: Research Methods</div>
+            <div class="project-description" style="font-size: 1.75rem;">3.1. Method Overview</div>
+            <div class="project-description">
+                Sign recognition or gesture recognition is a crucial component in technology-integrated solutions and is
+                a
+                trendy topic in research. By utilizing computer vision techniques and deep learning models, researchers
+                can
+                build applications to meet human interaction needs. This research demonstrates a real-time sign language
+                recognition system that utilizes the Mediapipe library for keypoint extraction and LSTM neural networks
+                for
+                classification tasks.</div>
+            <div class="project-description" style="font-size: 1.75rem;">3.2. Data Collection and Processing</div>
+            <div class="project-description">
+                We start the data collection phase by recording thirty videos for each label of sign language. Each
+                video
+                comprises thirty frames, resulting in 900 frames in total for each sign language label. Keypoints are
+                extracted using the Mediapipe holistic model, which provides real-time understanding of human body
+                movement
+                and interactions. Extracted key points are stored as numpy arrays, resulting in a structured dataset for
+                model training.</div>
+            <div class="project-description" style="font-size: 1.75rem;">3.3. Model Architecture</div>
+            <div class="project-description">
+                In this code experiment, our system uses an LSTM neural network architecture. The model includes
+                multiple
+                LSTM layers followed by dense layers for classification, with the ReLU activation function applied. ReLU
+                introduces non-linearity to the network by allowing only positive values to pass through unchanged and
+                transforming negative values to zero. The concatenated key points of 1662 features and a sequence length
+                of
+                30 frames make up the input form of the LSTM layers. The Adam optimizer is used for training the model,
+                optimizing learning rates based on first and second moments of gradients. The categorical cross-entropy
+                loss
+                function is used for multi-class classification tasks. LSTM is suitable for modeling sign language
+                sequences
+                due to its ability to capture temporal dependencies in sequential data.
+            </div>
+            <div class="project-description" style="font-size: 1.75rem;">3.4. Model Training</div>
+            <div class="project-description">
+                Our dataset is split into 95% for training and 5% for testing. The LSTM model trains using the
+                categorical
+                cross-entropy loss function and Adam optimizer over 2000 epochs. The training duration may vary based on
+                data size.
+            </div>
+            <div class="project-chapter">Chapter 4: Results and Discussions</div>
+            <div class="project-description" style="font-size: 1.75rem;">4.1. Result</div>
+            <div class="project-description">
+                In this project, we tested with 6 different devices and environments. The average training result is
+                A=0.99.
+                Increasing the training epochs from 1000 to 2000 improved accuracy from B=0.90 to A=0.99.
+
+                Sign Languages Environment Device Result
+                Angry, Love, Smile Clear Background, Enough Light Logi, 720p 0.9895
+                All Done, Help, Love Clear Background, Enough Light MacBook CAM, 720p 0.9955
+                Nice, Delicious, Congratulation Noise Background, Enough Light Logi, 720p 0.9882
+                Where, Sad, Sorry Noise Background, Enough Light MacBook CAM, 720p 0.9809
+                Where, Sad, Sorry Noise Background, Limited Light MacBook CAM, 720p 0.9734
+                Angry, Love, Smile Clear Background, Limited Light Logi, 720p 0.9775
+                Through our experiments, we found that a clear background and sufficient lighting conditions
+                significantly
+                improve the accuracy of the sign language recognition system. The results also showed that longer
+                training
+                periods generally led to improved accuracy, underscoring the importance of extensive training for
+                optimal
+                performance.</div>
+            <div class="project-chapter">Chapter 5: Conclusion and Future Work</div>
+            <div class="project-description">In conclusion, this research demonstrates that machine learning models,
+                particularly LSTM neural networks,
+                can effectively recognize and classify Cambodian Sign Language. The system's high accuracy highlights
+                the
+                potential for further development and application in real-world scenarios. Future work could explore
+                additional data augmentation techniques, investigate alternative neural network architectures, and
+                develop
+                more robust systems for varied environmental conditions. This project lays the foundation for more
+                inclusive
+                and accessible communication technologies for the Cambodian deaf community.
+
+                The results of this research indicate that real-time sign language recognition is feasible with current
+                technologies and methodologies. The potential for integrating such systems into daily life holds promise
+                for
+                improving communication and interaction between deaf and hearing individuals.</div>
+
+        </div>
+        </main>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+        { "source": "/about_me", "destination": "/about_me.html" },
+        { "source": "/contact", "destination": "/contact.html" },
+        { "source": "/projects", "destination": "/projects.html" },
+        { "source": "/csl_detection", "destination": "/csl_detection.html" },
+        { "source": "/(.*)", "destination": "/index.html" }
+    ]
+}
